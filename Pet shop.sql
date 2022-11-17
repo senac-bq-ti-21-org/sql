@@ -26,10 +26,10 @@ constraint dono foreign key (dono) references dono (id)
 
 # Inserção de dados.
 # Donos:
-insert into dono values (null, 'João', 1234, '3333 4444');
-insert into dono values (null, 'Pedro', 5678, '3333 5555');
-insert into dono values (null, 'José', 9123, '3333 6666');
-insert into dono values (null, 'Maria', 4321, '3333 2222');
+insert into dono values (null, 'João', 1234, '3333-4444');
+insert into dono values (null, 'Pedro', 5678, '3333-5555');
+insert into dono values (null, 'José', 9123, '3333-6666');
+insert into dono values (null, 'Maria', 4321, '3333-2222');
 # Raças:
 insert into raca values (null, 'Vira-lata');
 insert into raca values (null, 'Poodle');
