@@ -1,0 +1,29 @@
+CREATE DATABASE MERCADINHO;
+USE MERCADINHO;
+CREATE TABLE Cliente (
+    codCliente INT PRIMARY KEY NOT NULL AUTO_INCREMENT UNIQUE,
+    nome VARCHAR(100) NOT NULL,
+    telefone VARCHAR(32),
+    endereco VARCHAR(100)
+);
+CREATE TABLE Categoria (
+    codCategoria INT PRIMARY KEY NOT NULL AUTO_INCREMENT UNIQUE,
+    nome VARCHAR(100) NOT NULL
+);
+CREATE TABLE Produto (
+    codProduto INT PRIMARY KEY NOT NULL AUTO_INCREMENT UNIQUE,
+    codCategoria INT NOT NULL,
+    nome VARCHAR(100) NOT NULL,
+    estoque INT,
+    valor INT NOT NULL
+);
+CREATE TABLE Pedido (
+    codPedido INT PRIMARY KEY NOT NULL AUTO_INCREMENT UNIQUE,
+    codCliente INT NOT NULL,
+    dataPedido INT NOT NULL AUTO_INCREMENT
+);
+CREATE TABLE PedidoProduto (
+    codPedido INT NOT NULL,
+    codProduto INT NOT NULL,
+    qtdProduto INT NOT NULL
+);
