@@ -13,3 +13,4 @@ CREATE TABLE paciente (
     telefoneCelular INT,
     telefoneFixo INT
 );
+#hehe
