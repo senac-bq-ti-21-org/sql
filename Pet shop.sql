@@ -2,19 +2,21 @@
 drop database pet_shop_manha;
 create database pet_shop_manha;
 use pet_shop_manha;
-# Tabela "dono".
+
+# Criação das tabelas.
+# Tabela "dono":
 create table dono (
 id int primary key auto_increment, 
 nome varchar (60) not null, 
 cpf bigint not null unique, 
 telefone char (12)
 );
-# Tabela "raca".
+# Tabela "raca":
 create table raca (
 id int primary key auto_increment, 
 raca varchar (60) not null
 );
-# Tabela "animal".
+# Tabela "animal":
 create table animal (
 id int primary key, 
 nome varchar (60) not null, 
