@@ -18,5 +18,3 @@ delete from animal where dono = 2;
 # Mostra a grade de resultado.
 select * from dono;
 select nome, telefone from dono;
-
-#test  00
