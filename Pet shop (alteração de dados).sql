@@ -1,6 +1,5 @@
 # Lembre-se de alterar os nomes para os da sua base de dados.
 use pet_shop_manha;
-alter table pet_shop_manha drop column vacina;
 
 # Mudança dos dados:
 update animal set nome = 'Rex' where nome = 'Brutus';
@@ -15,3 +14,7 @@ update animal set vacina = true;
 #delete from dono where id = 'João';
 #delete from dono where nome = 'Pedro';
 delete from animal where dono = 2;
+
+# Mostra a grade de resultado.
+select * from dono;
+select nome, telefone from dono;
