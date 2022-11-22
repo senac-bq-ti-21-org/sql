@@ -16,8 +16,8 @@ update animal set vacina = true;
 delete from animal where dono = 2;
 
 # Mostra a grade de resultado.
-select * from dono;
-select nome, telefone from dono;
+#select * from dono;
+#select nome, telefone from dono;
 
 # Adicção de mais dados.
 insert into dono values (5, 'Maria', 456378, '1111-1111');
@@ -25,3 +25,6 @@ insert into dono values (null, 'Felipe', 456078, '1112-1511');
 insert into dono (cpf, telefone, nome) values (466078, '1112-1512', 'Joel');
 insert into dono (cpf, nome, telefone) values (466088, 'Joelma', '1012-1512');
 insert into dono (cpf, nome, telefone) values (466080, 'Joe', '1102-1512');
+
+# Mostra a grade de resultado sem duplificações ordenada por nome.
+select distinct nome from dono order by nome;
