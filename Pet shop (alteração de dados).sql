@@ -28,3 +28,4 @@ insert into dono (cpf, nome, telefone) values (466080, 'Joe', '1102-1512');
 
 # Mostra a grade de resultado sem duplificações ordenada por nome.
 select distinct nome from dono order by nome;
+#batata
